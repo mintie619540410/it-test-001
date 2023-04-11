@@ -11,5 +11,6 @@ public class UserController {
         System.out.println("master test");
         System.out.println("hot-fix edit test");
         System.out.println("test 001");
+        System.out.println("test 002");
     }
 }
