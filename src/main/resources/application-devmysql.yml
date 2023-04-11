@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    #数据库驱动完整类名
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库连接url
+    url: jdbc:mysql://localhost:3306/testdb
+    #数据库用户名
+    username: root
+    #数据库密码
+    password: root
+  jdbc:
+    template:
+      fetch-size: -1
+      max-rows: -1
+      #查询超时。默认是使用JDBC驱动程序的默认配置。如果没有指定持续时间后缀，则使用seconds。
+      query-timeout:
+
+
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: DEBUG
+

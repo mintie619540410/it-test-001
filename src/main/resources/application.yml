@@ -1,0 +1,22 @@
+good:
+  item-name: apple
+  item-price: 800
+  itemDesc: test
+my:
+  service:
+    enabled: false
+    remote-address: 127.0.0.1
+    ip-addr: host
+#    嵌套类型security,此处也可以独立成SecurityProperties
+    security:
+      username: mintie
+      password: 123456
+      roles:
+        - "USER"
+        - "ADMIN"
+
+spring:
+  profiles:
+    group:
+      dev: devmysql,devredis
+    active: dev
